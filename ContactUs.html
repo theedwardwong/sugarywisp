@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sugary Wisp by Monin:: Contact Us</title>
+            
+        <!--Linked with CSS (Cascading Style Sheets)-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Spartan Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&display=swap" rel="stylesheet"> 
+            
+        <!--Libre Baskerville Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> 
+            
+        <!--Bootstraplink for bar and close bar icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        
+        <!--Validation Form-->
+        <script>
+            function validateForm() {
+                var x = document.forms["myForm"]["email"].value;
+                if (x == "" || x == null) {
+                    alert("Email must be filled out");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+  
+    <body>
+
+        <!--Navigation bar-->  
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/monin-logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a>
+                        <li><a href="CategoryProduct.html">Products</a>
+                        <li><a href="AboutUs.html">About Us</a>
+                        <li><a href="ContactUs.html">Contact Us</a>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+
+                <div class="text-box">
+                    <h1>Contact Us</h1>
+                </div>
+            </nav>
+        </section>
+
+        <div class="form">
+            <form name="myForm" action="contactUs2.html" onsubmit="return validateForm()" method="POST">
+                <h1>Contact Us</h1><br>
+                <h5>Please feel free to contact us, We'll get back to you as soon as possible. </h5>
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="text" id="name">
+                            <label for="name"><i class="fas fa-user"></i>Your name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="number">
+                            <label for="number"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                            <input type="email" id="email" name="email">
+                            <label for="email"><i class="fas fa-envelope"></i>Email Id</label>
+                    </div>
+                    <div class="input-group">
+                            <textarea id="message" rows="8"></textarea>
+                            <label for="message"><i class="fas fa-comments"></i> Your message</label>
+                    </div>
+        
+                    <button type="submit">Submit<i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+
+        <!--Added company-information-->
+            <div class="company-information">
+                <h1>Company information</h1>
+                    <div class="information">
+                        <ul class="no-bullets">
+                            <li id="info1">Address        :<br><br>Monin Asia KL Sdn. Bhd.<br>Jalan Industri 3/4, Taman Industri Integrasi Rawang, 48000 Rawang, Selangor</li>
+                            <li id="info2">Contact Number : <br><br>03-6099 0999</li>
+                            <li id="info3">Company Email  : <br><br>- enquiries-asia@monin.com,<br>- hhteoh@monin.com</li>
+                        </ul>      
+                    </div>
+                <img class="company-logo-example" src="images/monin_malaysia_logo.jpg" alt="#">\
+            </div>
+
+            <!--Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="CategoryProduct.html">Products</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/MoninMalaysia/">Facebook</a></li>
+                            <li><a href="https://twitter.com/moninflavours?lang=en">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/monin_asia/?hl=en">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/monin/">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Sugary Wisp by Monin Company</p>
+            </div>
+        </div>
+
+             <!--JavaScript for Toggle Menu-->
+            <script>
+                var navLinks = document.getElementById("navLinks");
+                    function showMenu(){
+                    navLinks.style.right = "0";
+                    }
+
+                    function hideMenu(){
+                    navLinks.style.right = "-200px";
+                    }
+            </script>
+    
+    </body>
+</html>

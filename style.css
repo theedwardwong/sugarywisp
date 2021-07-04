@@ -1,0 +1,855 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box ;
+}
+
+/*Header*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.5), navy), url(images/mornin.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*Navigation bar*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.mornin-bttn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.mornin-bttn:hover{
+
+    background-color: navy;
+    transition: 1s;
+    transform: scale(1.1) ;
+}
+
+nav .fas{
+    display: none;
+}
+
+/*media query for responsive menu in mobile mode*/
+@media(max-width: 700px){
+
+    .text-box h1{
+        font-size: 20px;
+    }
+    
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute; 
+        background: navy;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+    nav .fas{
+        display: flex ;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 20px;
+    }
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+/*--Featured Products--*/
+.col-3{
+    flex-basis: 25%;
+    padding:10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-3 image{
+    width: 100%;
+}
+
+.col-3:hover{
+    transform: translateY(-5px);
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px ;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: navy;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: navy;
+    font-weight: normal;
+}
+
+.col-3 p{
+    font-size: 14px;
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*--Promotion banner--*/
+.Promo{
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.5),navy), url(images/Promotion.jpg);
+
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    object-fit: cover;
+}
+
+.Promo h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/*--Footer--*/
+.footer{
+    background:linear-gradient(black,navy);
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    padding: 20px 0 25px;
+
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.footer-col-1, .footer-col-2{
+    min-width: 250px;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.footer ul li{
+    list-style-type: none;
+    padding:5px;
+}
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+/*Category Syrup, TeaSyrup, FruitMix, Concentrate Syrup page*/
+img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+
+.lg-title,.md-title,.sm-title{
+    font-family: 'Spartan', sans-serif;
+    padding:0.6rem 0;
+    text-transform: capitalize;
+}
+
+.lg-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1.3rem 0;
+    opacity: 0.9;
+}
+
+.md-title{
+    font-size: 2rem;
+    font-family: 'Spartan', sans-serif;
+}
+
+.sm-title{
+    font-weight: 300;
+    font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
+}
+
+.text-light{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    opacity: 0.5;
+    margin: 0.4rem 0;
+}
+
+/*Product Section*/
+
+.products{
+    background: #f8f9fa;
+    padding: 3.2rem 0;
+}
+
+.products .text-light{
+    text-align: center;
+    width: 70%;
+    margin: 0.9rem auto;
+}
+
+.product{
+    margin: 2rem;
+    position: relative;
+}
+
+.product-content{
+    background: #ededed;
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+    height:400px;
+}
+
+.product-img{
+    background: #FFFFFF;
+    box-shadow: 0 0 20px 10px #FFFFFF;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: background 0.5s ease;
+}
+
+.product-info{
+    background: white;
+    padding: 2rem;
+}
+
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating span{
+    color: navy;
+}
+
+.product-name{
+    color: black;
+    display: block;
+    font-size: 1rem;    
+}
+
+.product-price{
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+}
+
+.product-img img{
+    transition: transform 0.6s ease;
+    height: 300px;
+}
+
+.product:hover .product-img img{
+    transform: scale(1.1);
+}
+
+.product:hover .product-img{
+    background: navy; 
+}
+
+.product:hover .product-btns{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+/* Media Queries for product page*/
+@media screen and (min-width: 992px){
+    /*Product item responsiveness section*/
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-col-r-bottom{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /*category responsiveness section*/
+    .category-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /*About us responsiveness section*/
+    .container-about-us{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .form{
+        padding: 80px 20px 80px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    /*Product item responsiveness section*/
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .product .text-light{
+        width: 50%;
+    }
+
+    /*category responsiveness section*/
+    .category-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    /*About us responsiveness section*/
+    .container-about-us{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+
+/*Category page collection*/
+.category-container{
+    margin: 20px auto;
+    margin-bottom: 50px;
+    width:1000px;
+    height:900px;
+    background-color:#fff;
+    display:grid;
+    
+}
+
+.category-box1{
+    background-image:url("https://www.campoluzenoteca.com/2150-large_default/syrup-monin-agave-organic.jpg");
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+    font-family:sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.category-box1:hover{
+    transform: scale(1.05);
+}
+
+.category-box1 a{
+    color:#333;
+    text-decoration: none;
+}
+
+.category-box2{
+    background-image: url("https://www.cuppers.ca/wp-content/uploads/2020/03/Monin-Blueberry-Syrup.jpg");
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+    font-family:sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.category-box2:hover{
+    transform: scale(1.05);
+}
+
+.category-box2 a{
+    color:#333;
+    text-decoration: none;
+}
+
+.category-box3{
+    background-image:url("https://www.nwcoffeesupply.com/wp-content/uploads/2014/01/HabaneroLimePET_1.jpg");
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+    font-family:sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.category-box3:hover{
+    transform: scale(1.05);
+}
+
+.category-box3 a{
+    color:#333;
+    text-decoration: none;
+}
+
+.category-box4{
+    background-image:url("https://a1coffee.net/media/catalog/product/cache/abb265195b7cbf268e16320ddc6f1e07/l/e/lemon_tea_monin_1_litre.jpg");
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+    font-family:sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.category-box4:hover{
+    transform: scale(1.05);
+}
+
+.category-box4 a{
+    color:#333;
+    text-decoration: none;
+}
+
+/* Contact Us */
+.form{
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+form{
+    width:90%;
+    max-width:600px;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width:100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid black;
+    color: black;
+    background:transparent;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    padding:10px;
+    color: black;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button{
+    padding: 10px 0;
+    color: black;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+/*--company information--*/
+.company-information{
+    background-position: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height:500px;
+    color: black;
+}
+
+.company-information img{
+    width:400px;
+    height:300px;
+}
+
+.company-logo-example{
+    height:250px;
+    width:250px;
+}
+
+.information{
+    display: flex;
+    justify-content: left;
+    color: black;
+    width:90%;
+    max-width:600px;
+    height:400px;
+    padding-left:30px;
+    padding-right:50px;
+    padding-top: 50px;
+    font-size: 15px;
+    border: 1px solid black;
+    margin:50px;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#info1{
+    padding: 17px;
+}
+
+#info2{
+    padding: 17px;
+}
+
+#info1{
+    padding: 17px;
+}
+
+.container-about-us{
+    margin: 40px auto;
+    margin-bottom: 980px;
+    width:1000px;
+    height:400px;
+    background-color:#fff;
+    
+}
+
+.box{
+    background-color:#333;
+    padding:20px;
+    border-radius:10px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    font-family:sans-serif;
+}
+
+/*About Us page*/
+.description-box{
+    background-color:#0064ff;
+    padding:50px;
+    border-radius:10px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    font-family:sans-serif;
+}
+
+.image-box img{
+    border-radius:10px;
+    transition:0.5s;
+}
+
+.image-box-logo img{
+    margin-top:80px;
+}
+
+.image-box-image img{
+    margin-top:25px;
+    border-radius:10px;
+}
+
+.image-box:hover{
+    transform: scale(1.1);
+}
+
+
+/*Popup*/
+
+.popup{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.content ul{
+    list-style-type: none;
+}
+
+.contentBox{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px 15px rgba(0,0,0,0.1);
+}
+
+
+.contentBox .imgBx{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox .imgBx::before{
+    content:'';
+    position: absolute;
+    width: 250px;
+    height:250px;
+    background: #e7ffe0;
+    border-radius: 50%;
+}
+
+.contentBox .imgBx img{
+    position: relative;
+    max-width: 250px;
+    z-index: 1;
+}
+
+.contentBox .content{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox .content h3{
+    color: #333;
+    line-height:1em;
+    font-weight:300;
+    font-size:2em;
+}
+
+.contentBox .content h2{
+    font-size: 1.95em;
+    color: #ff4d54;
+    line-height: 1em;
+
+}
+
+.contentBox .content h2 span{
+    color: #333;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+
+.contentBox .content p{
+    font-weight: 300;
+}
+
+.contentBox .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4d54;
+    color:#fff;
+    margin-top:15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background:black url(close.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position:center;
+    cursor:pointer;
+    border-radius: 50%;
+    z-index:10;
+}
+
+@media (max-width : 767px){
+    .contentBox{
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+    }
+    .contentBox .imgBx{
+        height: 200px;
+        transform: translateY(-50px);
+    }
+    .contentBox .imgBx::before{
+        background: #fff;
+    }
+    .contentBox .content{
+        height:auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 0;
+    }
+    .close{
+        top: -50px;
+        right: -10px;
+        background: black url(close.png);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position:center;
+    }
+}

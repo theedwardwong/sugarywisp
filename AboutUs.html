@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sugary Wisp by Monin:: About Us </title>
+              
+        <!--Linked with CSS (Cascading Style Sheets)-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Spartan Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&display=swap" rel="stylesheet"> 
+            
+        <!--Libre Baskerville Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> 
+            
+        <!--Bootstraplink for bar and close bar icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+  
+    <body>
+
+        <!--Navigation bar-->
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/monin-logo.png" alt="#"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a>
+                        <li><a href="CategoryProduct.html">Products</a>
+                        <li><a href="AboutUs.html">About Us</a>
+                        <li><a href="ContactUs.html">Contact Us</a>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+
+                <div class="text-box">
+                    <h1>About Us</h1>
+                </div>
+            </nav>
+        </section>
+
+        <!--Description about our founder and history-->
+        <div class="container-about-us">
+            <div class="image-box-logo">
+                <img src="images/monin-logo.png" alt="#">
+            </div>
+            <div class="description-box">
+                <div class="description-textbox">
+                    <p>
+                        Monin is a syrup company based in Bourges, France; which is selling syrups, liqueurs, and fruit purees.<br><br>
+                        Also, it is the leading supplier of flavoring ingredients to produce specialized beverages and gourmet culinary solutions.<br><br>
+                        The production units have located in three continents, over hundred employees working, and more than one hundred and forty-five which the product
+                        is available to sell.<br><br>
+                        Mainly, it is sold for commercial use such as bars, hotels, restaurants, cafes, luxury places and others.<br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="image-box">
+                <img src="images/founder.png" alt="">
+            </div>
+            <div class="description-box">
+                <div class="description-textbox">
+                    <p>
+                        Historically, it was family-owned and have been running for over a hundred years;
+                        It has three generations coming from the same family.<br><br>
+                        The founder of its company was Georges Monin;
+                        whom founded this company but the first syrup wasn’t made until 1920s.<br><br>
+                        Later in 1944, Georges Monin was passed away then his son, Paul Monin, took over the entire company several months later.
+                        He left his own wine production to pursuing and commercializing on syrups, building a network with traders in France entirely.<br><br>
+                        In 1996, Oliver Monin, Paul Monin’s son, instituted a manufacturing unit in Clearwater, Florida.<br><br>
+                        In 2018, he also expanding to the industrial productions in China, Malaysia, and America.
+                        Currently, Monin companies has their locations in North America, Australia, Asia, and France.
+                    </p>
+                </div>
+            </div>
+            <div class="image-box-image">
+                <img src="images/Monin-floral-syrup-750x422.jpg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="images/16cd1d_2e2a81708ece446f9b30f6876d24feb0_mv2.jpg" alt="">
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="CategoryProduct.html">Products</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/MoninMalaysia/">Facebook</a></li>
+                            <li><a href="https://twitter.com/moninflavours?lang=en">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/monin_asia/?hl=en">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/monin/">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Sugary Wisp by Monin Company</p>
+            </div>
+        </div>
+
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+                function showMenu(){
+                    navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+        </script>
+    </body>
+</html>

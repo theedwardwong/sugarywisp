@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sugary Wisp by Monin :: Category Products </title>
+            
+        <!--Linked with CSS (Cascading Style Sheets)-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Spartan Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&display=swap" rel="stylesheet"> 
+            
+        <!--Libre Baskerville Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> 
+            
+        <!--Bootstraplink for bar and close bar icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!--Promotion message-->
+        <script>
+            alert("Promotion clearance sales : Buy 3 any of syrup, 2 free any of syrup! Drop us a message via Contact Us page!");
+        </script>
+    </head>
+
+    <body>
+        <!--Popup-->
+        <div class="popup">
+            <div class="contentBox">
+                <div class="close"></div>
+                <div class="imgBx">
+                    <img src="https://image.flaticon.com/icons/png/512/3835/3835774.png" alt="#">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <h2>Buy 3 any of syrup, 2 free any of syrup! </h2>
+                        </li>
+                        <li>
+                            <p>Promotion clearance Syrup sales</p>
+                        </li>
+                        <li>
+                            <a href="ContactUs.html">Contact us!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Navigation bar-->    
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/monin-logo.png" alt="#"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a>
+                        <li><a href="CategoryProduct.html">Products</a>
+                        <li><a href="AboutUs.html">About Us</a>
+                        <li><a href="ContactUs.html">Contact Us</a>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+                <div class="text-box">
+                    <h1>Product Category</h1>
+                </div>
+            </nav>
+        </section>
+
+        <!--Category-->    
+        <div class="category-container">
+            <div class="category-box1">
+                <a href="category-Syrup.html">Syrup</a>
+            </div>
+            <div class="category-box2">
+                <a href="category-FruitMix.html">Fruit Mix</a>
+            </div>           
+            <div class="category-box3">
+                <a href="category-Concentrate.html">Concentrate</a>
+            </div>
+            <div class="category-box4">
+                <a href="category-TeaSyrup.html">Tea Syrup</a>
+            </div>
+        </div>
+            
+        <!--Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="CategoryProduct.html">Products</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/MoninMalaysia/">Facebook</a></li>
+                            <li><a href="https://twitter.com/moninflavours?lang=en">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/monin_asia/?hl=en">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/monin/">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Sugary Wisp by Monin Company</p>
+            </div>
+        </div>
+
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        
+        <!--Automatic show popup after 2 seconds of page load -->
+        <script>
+            const popup = document.querySelector('.popup');
+            const close = document.querySelector('.close');
+
+            window.onload = function(){
+                setTimeout(function(){
+                    popup.style.display = "block"
+
+                    // Add some time delay to show popup
+                }, 2000)
+            }
+
+            close.addEventListener('click',()=>{
+                popup.style.display = "none";
+            })
+        </script>
+    </body>
+</html>
